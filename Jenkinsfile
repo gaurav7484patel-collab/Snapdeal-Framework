@@ -6,15 +6,13 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-       // bat 'npm install'
-       // bat 'npx playwright test'
-        sh 'npm install'
-        sh 'npx playwright test '
+        //for windows
+       bat 'npm install'
+       bat 'npx playwright test'
+       //For mac
+        //  'npm install'
+        //  'npx playwright test '
       }
     }
   }
 }
-
-
-
-
